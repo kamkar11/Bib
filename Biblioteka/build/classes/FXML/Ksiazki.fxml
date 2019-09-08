@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Conrollers.KsiazkiController">
+   <children>
+      <TableView fx:id="tabKsiazki" layoutX="7.0" layoutY="302.0" onMouseClicked="#edit" prefHeight="362.0" prefWidth="1144.0">
+        <columns>
+          <TableColumn fx:id="colAutor" prefWidth="273.0" text="Autor" />
+            <TableColumn fx:id="colTytul" prefWidth="279.0" text="Tytuł" />
+            <TableColumn fx:id="colWydawnictwo" prefWidth="179.0" text="Wydawnictwo" />
+            <TableColumn fx:id="colGatunek" prefWidth="127.0" text="Gatunek" />
+            <TableColumn fx:id="colRokWydania" minWidth="0.0" prefWidth="119.0" text="Rok_Wydania" />
+            <TableColumn fx:id="colCena" prefWidth="166.0" text="Cena" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="21.0" text="Autor" />
+      <Label layoutX="35.0" layoutY="78.0" text="Tytuł" />
+      <Label layoutX="35.0" layoutY="132.0" text="Rok wydania" />
+      <Label layoutX="32.0" layoutY="183.0" text="Cena" />
+      <TextField fx:id="tfAutor" layoutX="151.0" layoutY="16.0" />
+      <TextField fx:id="tfTytul" layoutX="151.0" layoutY="73.0" />
+      <TextField fx:id="tfRokWyd" layoutX="151.0" layoutY="127.0" />
+      <TextField fx:id="tfCena" layoutX="151.0" layoutY="178.0" />
+      <Button layoutX="424.0" layoutY="181.0" mnemonicParsing="false" onAction="#dodajKsiazke" prefHeight="46.0" prefWidth="142.0" style="-fx-background-color: #08f;" text="Dodaj książkę" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <ComboBox fx:id="combGatunek" layoutX="525.0" layoutY="16.0" prefWidth="150.0" />
+      <Label layoutX="396.0" layoutY="21.0" text="Gatunek" />
+      <Label layoutX="378.0" layoutY="78.0" text="Wydawnictwo" />
+      <ComboBox fx:id="combWydawnictwo" layoutX="525.0" layoutY="73.0" prefWidth="150.0" />
+      <Button layoutX="604.0" layoutY="181.0" mnemonicParsing="false" onAction="#usunKsiazke" prefHeight="46.0" prefWidth="142.0" style="-fx-background-color: #f00;" text="Usuń" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button layoutX="824.0" layoutY="42.0" mnemonicParsing="false" onAction="#szukaj" prefHeight="46.0" prefWidth="142.0" style="-fx-background-color: #008000;" text="Szukaj" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button layoutX="873.0" layoutY="181.0" mnemonicParsing="false" onAction="#wysTabele" prefHeight="46.0" prefWidth="187.0" style="-fx-background-color: #b803ff;" text="Wyświetl tabele" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button layoutX="1041.0" layoutY="58.0" mnemonicParsing="false" onAction="#edycja" text="Edycja" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Conrollers.FXMLDocumentController">
+   <left>
+      <VBox prefHeight="683.0" prefWidth="145.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#menu" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #08f;" text="Informacje" textFill="#f8f5f5">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#ksiazki" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #2F4F4F;" text="Książki" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#wypozyczenia" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #2F4F4F;" text="Wypożyczenia" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#czytelnicy" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #2F4F4F;" text="Czytelnicy" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#gatunki" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #2F4F4F;" text="Gatunki" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#wydawnictwa" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #2F4F4F;" text="Wydawnictwa" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#zamknij" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #f00;" text="Zamknij" textFill="#fffdfd">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <Pane prefHeight="40.0" prefWidth="684.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="480.0" layoutY="3.0" prefHeight="34.0" prefWidth="341.0" style="-fx-text-fill: white;" text="BIBLIOTEKA">
+               <font>
+                  <Font name="Bell MT" size="26.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
